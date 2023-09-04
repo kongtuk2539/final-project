@@ -13,35 +13,31 @@ body {
     justify-content: center;
 }
 
+.container{
+    padding: 2rem;
+}
+
 .circle {
-    width: 160px;
-    height: 160px;
-    /* background: cornflowerblue; */
+    width: 70%;
+    height: 70%;
     position: relative;
 }
 
 .outer{
-    height: 160px;
-    width: 160px;
+    height: 280px;
+    width: 280px;
     border-radius: 50%;
-    padding: 20px;
-    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
+    padding: 30px;
     background-color: #939aa5;
 }
 
 .inner {
-    height: 120px;
-    width: 120px;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7);
-                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-                0px 12px 10px -10px rgba(0, 0, 0, 0.05); */
     background-color: #667080;
 }
 
@@ -53,9 +49,12 @@ body {
 circle {
     fill: none;
     stroke: #ffffff;
-    stroke-width: 20px;
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    height: 100%;
+    width: 100%;
+    stroke-width: 30px;
+    /* stroke-dasharray => .outer-width *2 + .inner-height */
+    stroke-dasharray: 780;
+    stroke-dashoffset: 780;
     animation: anim 2s linear forwards;
 }
 
@@ -64,6 +63,8 @@ svg{
     top: 0;
     left: 0;
     transform: rotate(-90deg);
+    width: 280px;
+    height: 280px;
 }
 
 /* @keyframes anim {

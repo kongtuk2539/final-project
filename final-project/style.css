@@ -15,17 +15,20 @@ body {
 
 .container{
     padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .circle {
-    width: 70%;
-    height: 70%;
+    height: 240px;
+    width: 240px;
     position: relative;
 }
 
 .outer{
-    height: 280px;
-    width: 280px;
+    height: 240px;
+    width: 240px;
     border-radius: 50%;
     padding: 30px;
     background-color: #939aa5;
@@ -51,10 +54,10 @@ circle {
     stroke: #ffffff;
     height: 100%;
     width: 100%;
-    stroke-width: 30px;
+    stroke-width: 28px;
     /* stroke-dasharray => .outer-width *2 + .inner-height */
-    stroke-dasharray: 780;
-    stroke-dashoffset: 780;
+    stroke-dasharray: 660;
+    stroke-dashoffset: 660;
     animation: anim 2s linear forwards;
 }
 
@@ -63,15 +66,6 @@ svg{
     top: 0;
     left: 0;
     transform: rotate(-90deg);
-    width: 280px;
-    height: 280px;
+    width: 240px;
+    height: 240px;
 }
-
-/* @keyframes anim {
-    0% {
-        stroke-dashoffset: 440;
-    }
-    100%{
-        stroke-dashoffset: 236;
-    }
-} */

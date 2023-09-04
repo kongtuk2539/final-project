@@ -14,12 +14,12 @@ const number = document.getElementById("number");
 
       //440-440*% ex. 440-440*0.5 = 50%
       const coinPercent = coin / 100;
-      const valueStroke = 780 - 780 * coinPercent
+      const valueStroke = 660 - 660 * coinPercent
 
 
       const animation = circle.animate(
         [
-          { strokeDashoffset: 780 }, // Start with the circle fully hidden
+          { strokeDashoffset: 660 }, // Start with the circle fully hidden
           { strokeDashoffset: valueStroke }, // End with the circle fully visible
         ],
         {
